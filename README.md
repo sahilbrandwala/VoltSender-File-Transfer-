@@ -12,9 +12,37 @@ Think of it as an AirDrop-style file transfer for Windows that works with **any*
 
 ## Download
 
-- **Latest release (Windows x64):** [download the installer](#) *(link once you publish releases)*
-- **SHA-256 checksum:** listed on the release page — verify with `certutil -hashfile VoltSender-Setup.exe SHA256`
-- **Source code:** [GitHub repository](#) *(link once public)*
+<p align="center">
+  <a href="https://github.com/sahilbrandwala/VoltSender-File-Transfer-/releases/latest/download/VoltSender_Setup.exe">
+    <img src="https://img.shields.io/badge/Download%20for%20Windows-VoltSender%20Setup.exe-0B7BE5?style=for-the-badge&logo=windows&logoColor=white" alt="Download VoltSender for Windows 10 and 11">
+  </a>
+</p>
+
+<p align="center">
+  <sub><b>One-click direct download</b> · Windows 10 & 11 (64-bit) · ~30 MB · 100% free · No GitHub account needed · No sign-up</sub>
+</p>
+
+<p align="center">
+  <a href="https://github.com/sahilbrandwala/VoltSender-File-Transfer-/releases/latest/download/VoltSender_Setup.exe"><b>⬇ Download VoltSender Setup (Windows .exe)</b></a>
+</p>
+
+Click the button above — the `VoltSender_Setup.exe` installer starts downloading immediately. No accounts, no sign-ups, no navigation. Once downloaded, double-click to install.
+
+<details>
+<summary><b>Other download options and file integrity check</b></summary>
+
+<br>
+
+- **All releases and version history** (older builds, portable ZIP if published): [GitHub Releases page](https://github.com/sahilbrandwala/VoltSender-File-Transfer-/releases)
+- **Verify the download** — open PowerShell in the folder you downloaded to and run:
+  ```
+  certutil -hashfile VoltSender_Setup.exe SHA256
+  ```
+  Compare the output with the SHA-256 hash on the [release notes](https://github.com/sahilbrandwala/VoltSender-File-Transfer-/releases/latest). If they match, the file was not tampered with in transit.
+- **Source code**: [GitHub repository](https://github.com/sahilbrandwala/VoltSender-File-Transfer-) — inspect it, fork it, or build from source.
+- **Report a bug or request a feature**: [Issues page](https://github.com/sahilbrandwala/VoltSender-File-Transfer-/issues).
+
+</details>
 
 VoltSender is **100% free** and always will be. No paid tier, no subscription, no telemetry, no watermark, no file-size limit imposed by us.
 
@@ -126,7 +154,7 @@ The client side is a webpage — no app to install. Works with Chrome, Safari, F
 
 ### Step 1 — Download
 
-Grab `VoltSender-Setup.exe` from the [releases page](#).
+Grab `VoltSender_Setup.exe` from the [releases page](https://github.com/sahilbrandwala/VoltSender-File-Transfer-/releases/latest) — or use the one-click download button at the top of this page.
 
 ### Step 2 — Handle the SmartScreen prompt (first download only)
 
@@ -138,7 +166,7 @@ Because VoltSender is a small independent project without a paid Authenticode co
 
 You can also verify the file integrity yourself before running it:
 ```
-certutil -hashfile VoltSender-Setup.exe SHA256
+certutil -hashfile VoltSender_Setup.exe SHA256
 ```
 Compare the output with the SHA-256 published on the release page. If they match, the download was not tampered with.
 
@@ -317,7 +345,7 @@ Default: `Documents\VoltSender`. Change it under **Settings → Receive folder**
 
 ### Is VoltSender open source?
 
-The source is [available on GitHub](#) — feel free to inspect it, fork it, or contribute.
+The source is [available on GitHub](https://github.com/sahilbrandwala/VoltSender-File-Transfer-) — feel free to inspect it, fork it, or contribute.
 
 ### How does VoltSender make money?
 
@@ -356,7 +384,7 @@ Settings persist to `%LocalAppData%\VoltSender\settings.json`.
 1. Reproduce the issue.
 2. Open **Settings** to find the log folder path (or navigate to `%LocalAppData%\VoltSender\logs\`).
 3. Grab the most recent `voltsender-YYYYMMDD.log` file.
-4. Open a [GitHub issue](#) with:
+4. Open a [GitHub issue](https://github.com/sahilbrandwala/VoltSender-File-Transfer-/issues/new) with:
    - What you tried to do
    - What happened instead
    - The log file (attach it — never paste it inline, logs may contain filenames)
@@ -376,7 +404,7 @@ Planned for future versions:
 - MSIX distribution via the Microsoft Store
 - Auto-update
 
-Feedback welcome via the [issues page](#).
+Feedback welcome via the [issues page](https://github.com/sahilbrandwala/VoltSender-File-Transfer-/issues).
 
 ---
 
